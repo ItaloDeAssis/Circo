@@ -111,3 +111,32 @@ sr.reveal(`.share__img, .send__content`, {
 sr.reveal(`.share__data, .send__img`, {
     origin: 'right'
 })
+/*==================== Avisos Ingresso ====================*/
+const botoes = document.querySelectorAll('#botao');
+        
+// Adiciona o evento de clique a cada botão
+botoes.forEach(function(botao) {
+    botao.addEventListener('click', function() {
+        alert('Ingressos Esgotados!');
+    });
+});
+/*==================== Aviso Mensagem ====================*/
+const botao = document.getElementById('contatar');
+const entrada = document.getElementById('entrada');
+
+// Adiciona o evento de clique ao botão
+botao.addEventListener('click', function() {
+    alert('Mensagem enviada! aguarde o nosso retorno.');
+
+    // Limpa o campo de entrada após o envio
+    entrada.value = '';
+});
+
+/*==================== FOOTER ====================*/
+const suporte = document.querySelectorAll('.footerSuporte');
+
+suporte.forEach(function(sup) {
+    sup.addEventListener('click', function() {
+        alert('Suporte temporariamente indisponível');
+    });
+});

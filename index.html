@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
 
     <!--========== BOX ICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -28,9 +30,9 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#share" class="nav__link">Quem somos</a></li>
-                    <li class="nav__item"><a href="#decoration" class="nav__link">Ingressos</a></li>
-                    <li class="nav__item"><a href="#accessory" class="nav__link">Localizacão</a></li>
+                    <li class="nav__item"><a href="#who" class="nav__link">Quem somos</a></li>
+                    <li class="nav__item"><a href="#events" class="nav__link">Ingressos</a></li>
+                    <li class="nav__item"><a href="#location" class="nav__link">Localizacão</a></li>
 
                     <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
                 </ul>
@@ -58,50 +60,48 @@
             </div>
         </section>
 
-        <!--========== SHARE ==========-->
-        <section class="share section bd-container" id="share">
+        <!--========== QUEM SOMOS ==========-->
+        <section class="share section bd-container" id="who">
             <div class="share__container bd-grid">
                 <div class="share__data">
                     <h2 class="section-title-center">Quem somos?</h2>
-                    <p class="share__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab,
-                        labore natus nobis fugit illum odio commodi beatae aspernatur quam. Est eos doloribus corporis
-                        explicabo modi sunt porro unde quam.</p>
+                    <p class="share__description">Somos uma empresa que aluga espaços para artistas, com o objetivo de criar oportunidades para que eles possam se desenvolver e se expressar através da arte.</p>
                     <a href="#contact" class="button">Nos contrate!</a>
                 </div>
 
                 <div class="share__img">
-                    <img src="assets/img/QuemSomos.jpg" alt="imgAqui">
+                    <img src="assets/img/Circo.jpg" alt="imgAqui">
                 </div>
             </div>
         </section>
 
-        <!--========== DECORATION ==========-->
-        <section class="decoration section bd-container" id="decoration">
+        <!--========== Programação ==========-->
+        <section class="decoration section bd-container" id="events">
             <h2 class="section-title">Programação</h2>
             <h3 class="sub-section-title">Compre aqui seu ingresso!</h3>
             <div class="decoration__container bd-grid">
                 <div class="decoration__data">
                     <img src="assets/img/contagem.jpg" alt="imgAqui" class="decoration__img">
                     <h3 class="decoration__title">Circo Contagem</h3>
-                    <a href="#" class="button button-link">Comprar</a>
+                    <a href="#Ingressos" class="button button-link" id="botao">Comprar</a>
                 </div>
 
                 <div class="decoration__data">
                     <img src="assets/img/BH.jpg" alt="imgAqui" class="decoration__img">
                     <h3 class="decoration__title">Circo Belo Horizonte</h3>
-                    <a href="#" class="button button-link">Comprar</a>
+                    <a href="#Ingressos" class="button button-link" id="botao">Comprar</a>
                 </div>
 
                 <div class="decoration__data">
                     <img src="assets/img/RIbeiraoDasNeves.jpg" alt="imgAqui" class="decoration__img">
                     <h3 class="decoration__title">Teatro Ribeirão das Neves</h3>
-                    <a href="#" class="button button-link">Comprar</a>
+                    <a href="#Ingressos" class="button button-link" id="botao">Comprar</a>
                 </div>
             </div>
         </section>
 
-        <!--========== ACCESSORIES ==========-->
-        <section class="accessory section bd-container" id="accessory">
+        <!--========== Localizacão ==========-->
+        <section class="accessory section bd-container" id="location">
             <h2 class="section-title">Localizacão do mundo <br> Umbrella</h2>
 
             <div class="accessory__container bd-grid">
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="accessory__content">
-                    <img src="assets/img/" alt="imgAqui" class="accessory__img">
+                    <img src="assets/img/betim.jpg" alt="imgAqui" class="accessory__img">
                     <h3 class="accessory__title">Sede Betim</h3>
                     <span class="accessory__category">R. TransBrasil n 220</span>
                     <!-- <span class="accessory__preci">$2.52</span>
@@ -130,7 +130,7 @@
                 </div>
 
                 <div class="accessory__content">
-                    <img src="assets/img/RIbeiraoDasNeves.jpg" alt="imgAqui" class="accessory__img">
+                    <img src="assets/img/SedeRibeirao.jpg" alt="imgAqui" class="accessory__img">
                     <h3 class="accessory__title">Sede Ribeirão das Neves</h3>
                     <span class="accessory__category">B. Cruzeiro R. Jose do Patrocinio n 40</span>
                     <!-- <span class="accessory__preci">$4.25</span>
@@ -138,7 +138,7 @@
                 </div>
 
                 <div class="accessory__content">
-                    <img src="assets/img/" alt="imgAqui" class="accessory__img">
+                    <img src="assets/img/seteLagoas.jpg" alt="imgAqui" class="accessory__img">
                     <h3 class="accessory__title">Sede Sete Lagoas</h3>
                     <span class="accessory__category">R. Nícola Lanza n 1</span>
                     <!-- <span class="accessory__preci">$7.99</span>
@@ -156,9 +156,9 @@
                     <form action="">
                         <div class="send__direction">
                             <!-- <input type="text" placeholder="email" class="send__input"> -->
-                            <input type="text" placeholder="mensagem" class="send__input">
+                            <input id="entrada" type="text" placeholder="mensagem" class="send__input">
 
-                            <a href="#" class="button">Enviar</a>
+                            <button class="button" id="contatar">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -171,39 +171,38 @@
     </main>
 
     <!--========== FOOTER ==========-->
-    <footer class="footer section">
+    <footer class="footer section" id="footer">
         <div class="footer__container bd-container bd-grid">
+
             <div class="footer__content">
+                <h3 class="footer__title">Nós</h3>
+                <p>Respeito, inclusão, inovação e diversidade. 
+                </p>
+            </div> 
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Nossos serviços</h3>
+                <ul>
+                    <li><a href="#contact" class="footer__link">Aluguel de Terreno </a></li>
+                    <li><a href="#contact" class="footer__link">Capacitação de Jovens</a></li>
+                    <li><a href="#contact" class="footer__link">Produção de eventos</a></li>
+                </ul>
+            </div>
+
+           <div class="footer__content">
                 <h3 class="footer__title">
                     <a href="#" class="footer__logo">Suporte</a>
                 </h3>
                 <ul>
-                    <li><a href="#" class="footer__link">ingressos</a></li>
-                    <li><a href="#" class="footer__link">Eventos</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Nossos serviços</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Aluguel de Terreno </a></li>
-                    <li><a href="#" class="footer__link">Capacitação de Jovens</a></li>
-                    <li><a href="#" class="footer__link">Produção de eventos</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Nós</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Sobre</a></li>
-                    <li><a href="#" class="footer__link">Nossa missão</a></li>
-                    <li><a href="#" class="footer__link">Nossos valores</a></li>
+                    <li><a href="#footer" class="footer__link footerSuporte">ingressos</a></li>
+                    <li><a href="#footer" class="footer__link footerSuporte">Eventos</a></li>
+                    <li><a href="#footer" class="footer__link footerSuporte">Serviços</a></li>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Social</h3>
-                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.instagram.com/umbrella_circus" class="footer__social" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
             </div>
         </div>
 

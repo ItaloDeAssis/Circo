@@ -110,6 +110,9 @@ img{
   max-width: 100%;
   height: auto;
 }
+button{
+  cursor: pointer;
+}
 
 /*========== CLASS CSS ==========*/
 .section{
@@ -300,6 +303,16 @@ img{
   font-weight: var(--font-semi-bold);
   transition: .3s;
 }
+#button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+}
+
 
 .button:hover{
   background-color: var(--first-color-alt);
@@ -316,7 +329,7 @@ img{
   color: var(--first-color-alt);
 }
 
-/*========== SHARE ==========*/
+/*========== Quem somos ==========*/
 .share__data{
   text-align: center;
 }
@@ -330,7 +343,7 @@ img{
   justify-self: center;
 }
 
-/*========== DECORATION ==========*/
+/*========== Programação ==========*/
 .decoration__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
@@ -356,7 +369,7 @@ img{
   margin-bottom: var(--mb-1);
 }
 
-/*========== ACCESSORIES ==========*/
+/*========== Ingressos ==========*/
 .accessory__container{
   grid-template-columns: repeat(2,1fr);
   padding-bottom: 2rem;
@@ -410,7 +423,7 @@ img{
   border-radius: 1rem 0 1rem 0;
 }
 
-/*========== SEND GIFT ==========*/
+/*========== Enviar mensagem ==========*/
 .send{
   background-color: var(--first-color-send);
 }
